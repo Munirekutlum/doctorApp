@@ -1,0 +1,54 @@
+.dot.active {
+    color: #007bff;
+}
+.dots {
+    margin-top: 10px;
+}
+
+.dot {
+    font-size: 0.8em;
+    color: #d8d8d8;
+    margin-right: 5px;
+}
+
+.dot.active {
+    color: #007bff;
+}
+
+.actions ion-button {
+    margin-bottom: 10px;
+}
+
+.blue{
+    color:#007bff
+}       
+ion-footer {
+    --background: #007bff; 
+}
+
+ion-tab-bar {
+    --background: #007bff;
+    --color: white; 
+}
+
+ion-tab-button {
+    --color: white; 
+    --color-selected: white;
+}
+
+ion-tab-button ion-icon {
+    color: white;
+}
+
+ion-tab-button ion-label {
+    color: white; 
+}
+
+ion-searchbar.custom {
+    --border-radius: 30px;
+}
+ion-segment {
+    --background: #ececec;
+
+    
+  }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor List</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/@ionic/core/css/ionic.bundle.css">
+    <link rel="stylesheet" href="welcomePage.css">
+
+</head>
+
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title class="blue ">Welcome, Ana!</ion-title>
+                <ion-buttons slot="end">
+                    <ion-button>
+                        <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+        </ion-header>
+
+        <ion-content>
+            <ion-searchbar class="custom" placeholder="Search doctors, hospitals, specialities"></ion-searchbar>
+
+            <ion-segment value="all">
+                <ion-segment-button value="all">
+                    <ion-label>All</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="topRated">
+                    <ion-label>Top Rated</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="bestReviews">
+                    <ion-label>Best Reviews</ion-label>
+                </ion-segment-button>
+            </ion-segment>
+
+            <ion-list>
+
+                <ion-card>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="3">
+                                <ion-avatar>
+                                    <img src="david.jpg" alt="Dr. David Gilmour">
+                                </ion-avatar>
+                            </ion-col>
+                            <ion-col size="6" class="info">
+                                <h2>Dr. David Gilmour</h2>
+                                <p>5 years experience</p>
+                                <ion-badge color="primary">General Medicine</ion-badge>
+                                <div class="dots">
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot"></ion-icon>
+
+                                </div>
+                            </ion-col>
+                            <ion-col size="3" class="actions">
+                                <ion-button fill="clear" size="large">
+                                    <ion-icon slot="icon-only" name="calendar"></ion-icon>
+                                </ion-button>
+                                <ion-button fill="clear" size="large">
+                                    <ion-icon slot="icon-only" name="call"></ion-icon>
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card>
+
+                <ion-card>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="3">
+                                <ion-avatar>
+                                    <img src="mary.jpg" alt="Dr. Mary Shepperd">
+                                </ion-avatar>
+                            </ion-col>
+                            <ion-col size="6" class="info">
+                                <h2>Dr. Mary Shepperd</h2>
+                                <p>8 years experience</p>
+                                <ion-badge color="primary">Cardiologist</ion-badge>
+                                <div class="dots">
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot"></ion-icon>
+                                </div>
+                            </ion-col>
+                            <ion-col size="3" class="actions">
+                                <ion-button fill="clear" size="large">
+                                    <ion-icon slot="icon-only" name="calendar"></ion-icon>
+                                </ion-button>
+                                <ion-button fill="clear" size="large">
+                                    <ion-icon slot="icon-only" name="call"></ion-icon>
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card>
+
+                <ion-card>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="3">
+                                <ion-avatar>
+                                    <img src="juan.jpeg" alt="Dr. Juan Solo">
+                                </ion-avatar>
+                            </ion-col>
+                            <ion-col size="6" class="info">
+                                <h2>Dr. Juan Solo</h2>
+                                <p>12 years experience</p>
+                                <ion-badge color="primary">Ophthalmologist</ion-badge>
+                                <div class="dots">
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                    <ion-icon name="ellipse" class="dot active"></ion-icon>
+                                </div>
+                            </ion-col>
+                            <ion-col size="3" class="actions">
+                                <ion-button fill="clear" size="large">
+                                    <ion-icon slot="icon-only" name="calendar"></ion-icon>
+                                </ion-button>
+                                <ion-button fill="clear" size="large">
+                                    <ion-icon slot="icon-only" name="call"></ion-icon>
+                                </ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card>
+
+            </ion-list>
+        </ion-content>
+
+        <ion-footer class="blue">
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="home">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <ion-label>Home</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button tab="appointments">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <ion-label>Appointments</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button tab="chats">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-label>Doc Chats</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button tab="profile">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <ion-label>Profile</ion-label>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-footer>
+    </ion-app>
+
+    <script type="module" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
+</body>
+
+</html>

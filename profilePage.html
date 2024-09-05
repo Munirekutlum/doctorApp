@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/@ionic/core/css/ionic.bundle.css">
+    <link rel="stylesheet" href="profilePage.css">
+
+</head>
+
+<body>
+    <ion-app>
+    
+        <ion-content>
+            <ion-card>
+                <img src="juan.jpeg" alt="Dr. Juan Solo" class="profile-image">
+                <div class="info-section">
+                    <h2>Dr. Juan Solo</h2>
+                    <p>Ophthalmologist</p>
+                    <p>
+                        <ion-icon name="location-outline"></ion-icon> General Hospital, NY
+                    </p>
+                    <ion-row class="ratings">
+                        <ion-icon name="star" color="primary"></ion-icon>
+                        <ion-icon name="star" color="primary"></ion-icon>
+                        <ion-icon name="star" color="primary"></ion-icon>
+                        <ion-icon name="star" color="primary"></ion-icon>
+                        <ion-icon name="star" color="primary"></ion-icon>
+                        <span class="reviews">See all reviews (359)</span>
+                    </ion-row>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>58</h3>
+                        <p>Age</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1000+</h3>
+                        <p>Patients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>12 years</h3>
+                        <p>Experience</p>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h4>About</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <ion-button shape="round" color="light" expand="block" class="appointment-btn" >
+                    <ion-text class="blue ion-text-center">
+                      <p>Book an Appointment</p>
+                    </ion-text>
+                </ion-button>
+            </ion-card>
+        </ion-content>
+
+        <ion-footer>
+            <ion-tab-bar slot="bottom">
+                <ion-tab-button tab="home">
+                    <ion-icon name="home-outline"></ion-icon>
+                    <ion-label>Home</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button tab="appointments">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <ion-label>Appointments</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button tab="chats">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-label>Doc Chats</ion-label>
+                </ion-tab-button>
+
+                <ion-tab-button tab="profile">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <ion-label>Profile</ion-label>
+                </ion-tab-button>
+            </ion-tab-bar>
+        </ion-footer>
+    </ion-app>
+
+    <script type="module" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
+</body>
+
+</html>

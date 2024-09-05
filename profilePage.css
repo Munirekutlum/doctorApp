@@ -1,0 +1,77 @@
+ion-card {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.profile-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.info-section {
+    margin-top: 20px;
+}
+
+.info-section h2 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.info-section p {
+    color: #999;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stat-item {
+    background-color: #eaf5ff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.stat-item h3 {
+    color: #007bff;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.stat-item p {
+    color: #999;
+    font-size: 0.9em;
+    margin: 0;
+}
+.blue {
+    color: rgb(64, 154, 207);
+}
+ion-footer {
+    --background: #007bff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ion-tab-bar {
+    --background: #007bff;
+    --color: white;
+}
+
+ion-tab-button {
+    --color: white;
+    --color-selected: white;
+}
+
+ion-tab-button ion-icon {
+    color: white;
+}
+
+ion-tab-button ion-label {
+    color: white;
+}

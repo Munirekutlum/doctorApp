@@ -1,0 +1,23 @@
+.logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .forgot-password p {
+    color: #6a6e71; 
+    cursor: pointer;
+  }
+  
+  .forgot-password p:hover {
+    text-decoration: underline;
+  }
+  .blue {
+    color: rgb(64, 154, 207);
+  }
+
+ 
+
+ 
+
+  
+
